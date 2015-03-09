@@ -3,7 +3,7 @@
 // modificati raramente
 //
 
-#pragma once
+#pragma once 
 
 #include "targetver.h"
 
