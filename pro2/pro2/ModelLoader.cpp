@@ -33,7 +33,7 @@ void ModelLoader::loadModel(void)
 
 
 	fileLoader fL;
-	char *s1, *s2;
+	char  *s2;
 
 	fL.fileName=fileName;
 	fL.loadFile();
@@ -52,7 +52,7 @@ void ModelLoader::loadModel(void)
 	int jNode=0;
 
 	
-	Node n;
+	Node *n;
 
 	char *line1;
 	
@@ -76,10 +76,11 @@ void ModelLoader::loadModel(void)
 		if (subs=="Node"){
 			// file section:	NODE COORDINATES
 
-			n.readFromFileLoader(fL);
+			n = new Node();
+			n->readFromFileLoader(fL);
 
 			// letto il nodo, lo mette nel container giusto
-			model->nodes[n.ID] = n;
+			model->nodes[n->ID] = n;
 				
 			i++;
 		}
@@ -129,8 +130,8 @@ void ModelLoader::printNodes(void)
 	}
 
 	// show content:
-	for (map<long,Node>::iterator it=model->nodes.begin(); it!=model->nodes.end(); ++it)
-		std::cout << it->first << " => " << it->second.toString() ;
+	for (map<long,Node*>::iterator it=model->nodes.begin(); it!=model->nodes.end(); ++it)
+		if(it->second) std::cout << it->first << " => " << it->second->toString() ;
 	
 
 

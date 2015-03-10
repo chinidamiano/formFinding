@@ -7,9 +7,9 @@ class Model
 {
 public:
 
-	map<long, FreedomCase> freedomCases;
-	map<long, Node> nodes;
-	map<long, Beam> beams;
+	map<long, FreedomCase*> freedomCases;
+	map<long, Node*> nodes;
+	map<long, Beam*> beams;
 
 	//TODO aggiungere tutte le map per contenere i dati
 

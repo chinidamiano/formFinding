@@ -16,6 +16,9 @@ Model::~Model(void)
 void Model::clearModel(){
 	
 	// clear maps
+
+	//TODO!!
+	// loop and delete pointed objects
 	freedomCases.clear();
 	nodes.clear();
 
