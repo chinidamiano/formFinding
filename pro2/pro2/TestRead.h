@@ -11,6 +11,7 @@ public:
 	Model *model;
 
 	void testNodes();
+	void testBeams();
 
 };
 
