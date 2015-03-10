@@ -70,8 +70,8 @@ void ModelLoader::loadModel(void)
 
 		// legge un NODE
 		if (subs=="Node"){
-			// legge i numeri successivi e li mette nella variabile Node n
-			//n.readFromSs(ss);
+			// file section:	NODE COORDINATES
+
 			n.readFromFileLoader(fL);
 
 			// letto il nodo, lo mette nel container giusto
@@ -94,8 +94,16 @@ void ModelLoader::loadModel(void)
 		else if (subs=="BeamProp" || subs=="CutoffProp" || subs=="TrussProp" ){
 		}
 		else if (subs=="Beam"){
+			// file section:	BEAM ELEMENTS
+			// Beam.cpp
 		}
-		else if (subs=="Beam"){
+
+
+		else if (subs=="Tri3"){
+			//		/ PLATE ELEMENTS
+		}
+		else if (subs=="Quad4"){
+			//		/ PLATE ELEMENTS
 		}
 
 	}

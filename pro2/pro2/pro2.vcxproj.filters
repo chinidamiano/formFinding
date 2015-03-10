@@ -60,6 +60,9 @@
     <ClInclude Include="TestRead.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="BmAngle.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -102,6 +105,9 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="TestRead.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="BmAngle.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
