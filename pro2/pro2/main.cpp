@@ -41,8 +41,9 @@ int xxx(){
 
 int main(int argc, char* argv[])
 {
-//	xxx();
-	string fileName="c:\\bin\\dev\\txt\\SCE-002-IP01-FM112_02.txt";
+
+//	string fileName="c:\\bin\\dev\\txt\\SCE-002-IP01-FM112_02.txt";
+	string fileName="c:\\bin\\dev\\txt\\SCE_002_ridotto.txt";
 	
 
 	Model model;
@@ -58,14 +59,11 @@ int main(int argc, char* argv[])
 
 	modelLoader.loadModel();
 
-//	modelLoader.printNodes();
-
 	testRead.model=&model;
 	testRead.testNodes();
 
 	model.printModelSummary();
 	modelLoader.printNodes();
-	system("PAUSE");
 	
 	model.clearModel();
 	model.printModelSummary();

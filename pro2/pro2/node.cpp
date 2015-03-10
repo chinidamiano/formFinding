@@ -26,20 +26,28 @@ void Node::readFromFileLoader(fileLoader& fL){
 	char *s;
 
 	try{
+		cout << errno;
 		fL.getWord(&s);
-		subs=s;
+//		subs=s;
+//		this->ID=stol(subs);
+		this->ID=atol(s);
 
-		//string to 
-		this->ID=stol(subs);
+
 		fL.getWord(&s);
 		subs=s;
 		this->x= stod(subs);
+//		this->x= atof(s);
+
 		fL.getWord(&s);
-		subs=s;
-		this->y = stod(subs);
+//		subs=s;
+//		this->y = stod(subs);
+		this->y = atof(s);
+
 		fL.getWord(&s);
 		subs=s;
 		this->z = stod(subs);
+//		this->z = atof(s);
+
 	}
 	catch(exception& e)
 	{ cout << " error Node::readFromFileLoader  <" << subs  << "> " << e.what() << '\n';}
