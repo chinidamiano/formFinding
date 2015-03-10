@@ -42,7 +42,7 @@ void Node::readFromFileLoader(fileLoader& fL){
 		this->z = stod(subs);
 	}
 	catch(exception& e)
-	{ cout << " error Node::readFromFileLoader  " << subs;}
+	{ cout << " error Node::readFromFileLoader  <" << subs  << "> " << e.what() << '\n';}
 
 }
 
@@ -61,7 +61,7 @@ void Node::readFromSs(stringstream& ss)
 		this->z = stod(subs);
 	}
 	catch(exception& e)
-	{ cout << " error ?! " << subs;}
+	{ cout << " error ?! " << subs << " " << e.what() << "\n";}
 }
 
 

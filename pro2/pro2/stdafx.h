@@ -17,6 +17,7 @@
 #include <map>
 #include <vector>
 #include <windows.h>
+#include <cmath>
 
 #include <stdio.h>
 #include <tchar.h>

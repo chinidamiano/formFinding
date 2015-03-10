@@ -17,9 +17,9 @@ void TestRead::testNodes()
 {
 	double tol = 0.000001;
 	cout << "\n Test Nodes";
-	if ( ( model->nodes[33].x - 8.9150000000090E+1 ) < tol && 
-		 ( model->nodes[33].y - 1.8000000090E+2 ) < tol && 
-		 ( model->nodes[33].z - 7.10000000090E+0 ) < tol ) 
+	if ( abs( model->nodes[33].x - 8.9150000000090E+1 ) < tol && 
+		 abs( model->nodes[33].y - 1.8000000090E+2    ) < tol && 
+		 abs( model->nodes[33].z - 7.10000000090E+0   ) < tol ) 
 		cout << " ok\n";
 	else
 		cout << " failed\n";
@@ -27,9 +27,9 @@ void TestRead::testNodes()
 
 
 	cout << " Test Nodes";
-	if ( ( model->nodes[3371].x - 5.31500000000000E+1 ) < tol && 
-		 ( model->nodes[3371].y -  7.87500000000000E+1 ) < tol && 
-		 ( model->nodes[3371].z - (-1.00000000000000E-1) ) < tol ) 
+	if ( abs( model->nodes[3371].x - 5.31500000000000E+1   ) < tol && 
+		 abs( model->nodes[3371].y -  7.87500000000000E+1  ) < tol && 
+		 abs( model->nodes[3371].z - (-1.00000000000000E-1)) < tol ) 
 		cout << " ok\n";
 	else
 		cout << " failed\n";

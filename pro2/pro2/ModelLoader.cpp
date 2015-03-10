@@ -11,6 +11,7 @@ ModelLoader::ModelLoader(void)
 
 ModelLoader::~ModelLoader(void)
 {
+
 }
 
 
@@ -23,6 +24,14 @@ void ModelLoader::loadModel(void)
 	// apre il file
     ifs.open (fileName, ifstream::in);
 
+	//check file open, altrimenti dà errore e esce
+	if (!ifs){
+		cout << " ERRORE : file non trovato, <" << fileName << ">\n";
+		system("PAUSE");
+		exit(0);
+	}
+
+
 	fileLoader fL;
 	char *s1, *s2;
 
@@ -33,12 +42,7 @@ void ModelLoader::loadModel(void)
 	//	fL.getWord(&s2);
 
 
-	//check file open, altrimenti dà errore e esce
-	if (!ifs){
-		cout << " ERRORE : file non trovato, <" << fileName << ">";
-		system("PAUSE");
-		exit(0);
-	}
+
 
 	string line;
 	string subs;
@@ -117,10 +121,17 @@ void ModelLoader::printNodes(void)
 {
 	int i;
 	cout << " print Nodes \n" ;
+	cout << " Nodes count: " << model->nodes.size() <<"\n";
 
 	// TODO mettere un ITERATOR
 	for (i=1;i<=10;i++){
-		cout << model->nodes[i].toString(); 
-}
+		//cout << model->nodes[i].toString(); 
+	}
+
+	// show content:
+	for (map<long,Node>::iterator it=model->nodes.begin(); it!=model->nodes.end(); ++it)
+		std::cout << it->first << " => " << it->second.toString() ;
+	
+
 
 }
