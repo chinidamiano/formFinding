@@ -63,6 +63,9 @@
     <ClInclude Include="BmAngle.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="PlPressure.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -108,6 +111,9 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="BmAngle.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="PlPressure.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>

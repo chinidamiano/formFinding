@@ -86,6 +86,7 @@
     <ClInclude Include="ModelLoader.h" />
     <ClInclude Include="NdForce.h" />
     <ClInclude Include="node.h" />
+    <ClInclude Include="PlPressure.h" />
     <ClInclude Include="Restraint.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -104,6 +105,7 @@
     <ClCompile Include="NdForce.cpp" />
     <ClCompile Include="node.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlPressure.cpp" />
     <ClCompile Include="Restraint.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
