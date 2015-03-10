@@ -3,7 +3,7 @@
 // modificati raramente
 //
 
-#pragma once 
+#pragma once
 
 #include "targetver.h"
 
@@ -33,6 +33,7 @@
 #include "Model.h"
 
 #include "ModelLoader.h"
+#include "TestRead.h"
 
 
 

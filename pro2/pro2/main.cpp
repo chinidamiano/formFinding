@@ -22,6 +22,7 @@ int main(int argc, char* argv[])
 
 	Model model;
 	ModelLoader modelLoader;
+	TestRead testRead;
 
 	modelLoader.model= &model;
 	modelLoader.fileName = fileName;
@@ -30,10 +31,18 @@ int main(int argc, char* argv[])
 
 	modelLoader.loadModel();
 
-	modelLoader.printNodes();
+//	modelLoader.printNodes();
 
+	testRead.model=&model;
+	testRead.testNodes();
 
+	model.printModelSummary();
 	system("PAUSE");
+	
+	model.clearModel();
+	model.printModelSummary();
+	system("PAUSE");
+	
 	return 0;
 }
 

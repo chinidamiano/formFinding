@@ -77,6 +77,7 @@
   <ItemGroup>
     <ClInclude Include="Beam.h" />
     <ClInclude Include="BeamProperty.h" />
+    <ClInclude Include="fileLoader.h" />
     <ClInclude Include="FreedomCase.h" />
     <ClInclude Include="group.h" />
     <ClInclude Include="LoadPattern.h" />
@@ -87,10 +88,12 @@
     <ClInclude Include="Restraint.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestRead.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Beam.cpp" />
     <ClCompile Include="BeamProperty.cpp" />
+    <ClCompile Include="fileLoader.cpp" />
     <ClCompile Include="FreedomCase.cpp" />
     <ClCompile Include="group.cpp" />
     <ClCompile Include="LoadPattern.cpp" />
@@ -104,6 +107,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TestRead.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

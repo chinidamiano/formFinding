@@ -17,5 +17,6 @@ public:
 	~Model(void);
 
 	void clearModel();
+	void printModelSummary();
 };
 
